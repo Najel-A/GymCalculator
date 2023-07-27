@@ -37,40 +37,41 @@ function App() {
   
 
   return (
-    <div className="App">
-      <h1>1 Rep Max Calculator</h1>
-      <label>
-        Weight:
-        <input
-          type="text"
-          value={weightInputText}
-          onChange={handleWeightChange}
-        />
-      </label>
+    <div className='container'>
+      <div className="rectangle-box">
+        <h1>1 Rep Max Calculator</h1>
+        <label>
+          Weight:
+          <input
+            type="text"
+            value={weightInputText}
+            onChange={handleWeightChange}
+          />
+        </label>
 
-      <label>
-        Reps:
-        <input
-          type="text"
-          value={repsInputText}
-          onChange={handleRepsChange}
-        />
-      </label>
+        <label>
+          Reps:
+          <input
+            type="text"
+            value={repsInputText}
+            onChange={handleRepsChange}
+          />
+        </label>
 
-      <label>
-        1 Rep Max:
-        <input
-          type="text"
-          value={oneRepMax}
-          readOnly
-        />
-      </label>
-      <div className="button-container">
-        <button onClick={handleCalculateClick}>Calculate</button>
-        <button onClick={handleClearClick}>Clear</button>
+        <label>
+          1 Rep Max:
+          <input
+            type="text"
+            value={oneRepMax}
+            readOnly
+          />
+        </label>
+        <div className="button-container">
+          <button onClick={handleCalculateClick}>Calculate</button>
+          <button onClick={handleClearClick}>Clear</button>
+        </div>
       </div>
     </div>
   );
 }
-
 export default App;

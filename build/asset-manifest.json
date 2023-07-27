@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GymCalculator/static/css/main.09259c78.css",
-    "main.js": "/GymCalculator/static/js/main.73546996.js",
+    "main.css": "/GymCalculator/static/css/main.0ed1d6ee.css",
+    "main.js": "/GymCalculator/static/js/main.b90b2d18.js",
     "index.html": "/GymCalculator/index.html",
-    "main.09259c78.css.map": "/GymCalculator/static/css/main.09259c78.css.map",
-    "main.73546996.js.map": "/GymCalculator/static/js/main.73546996.js.map"
+    "main.0ed1d6ee.css.map": "/GymCalculator/static/css/main.0ed1d6ee.css.map",
+    "main.b90b2d18.js.map": "/GymCalculator/static/js/main.b90b2d18.js.map"
   },
   "entrypoints": [
-    "static/css/main.09259c78.css",
-    "static/js/main.73546996.js"
+    "static/css/main.0ed1d6ee.css",
+    "static/js/main.b90b2d18.js"
   ]
 }
