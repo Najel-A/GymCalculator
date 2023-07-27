@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.09259c78.css",
-    "main.js": "/static/js/main.73546996.js",
-    "index.html": "/index.html",
-    "main.09259c78.css.map": "/static/css/main.09259c78.css.map",
-    "main.73546996.js.map": "/static/js/main.73546996.js.map"
+    "main.css": "/GymCalculator/static/css/main.09259c78.css",
+    "main.js": "/GymCalculator/static/js/main.73546996.js",
+    "index.html": "/GymCalculator/index.html",
+    "main.09259c78.css.map": "/GymCalculator/static/css/main.09259c78.css.map",
+    "main.73546996.js.map": "/GymCalculator/static/js/main.73546996.js.map"
   },
   "entrypoints": [
     "static/css/main.09259c78.css",
