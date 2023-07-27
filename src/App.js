@@ -7,11 +7,13 @@ function App() {
   const [oneRepMax, setOneRepMax] = useState('');
 
   const handleWeightChange = weight => {
-    setWeightText(weight.target.value);
+    const numericValue = weight.target.value.replace(/\D/g, '');
+    setWeightText(numericValue);
   }
 
   const handleRepsChange = reps => {
-    setRepsText(reps.target.value);
+    const numericValue = reps.target.value.replace(/\D/g, '');
+    setRepsText(numericValue);
   }
 
   const handleCalculateClick = () => {
@@ -20,17 +22,23 @@ function App() {
 
     if (!isNaN(weight) && !isNaN(reps) && reps !== 0) {
       const calculatedOneRepMax = weight / ((1.0278) - (0.0278 * reps));
-      setOneRepMax(calculatedOneRepMax.toFixed(1));
+      setOneRepMax(calculatedOneRepMax.toFixed(2));
     } else {
       setOneRepMax();
     }
   };
 
+  const handleClearClick = () => {
+    setWeightText('');
+    setRepsText('');
+    setOneRepMax('');
+  }
+
   
 
   return (
     <div className="App">
-      <h1>hi</h1>
+      <h1>1 Rep Max Calculator</h1>
       <label>
         Weight:
         <input
@@ -49,7 +57,6 @@ function App() {
         />
       </label>
 
-      <button onClick={handleCalculateClick}>Calculate</button>
       <label>
         1 Rep Max:
         <input
@@ -58,6 +65,10 @@ function App() {
           readOnly
         />
       </label>
+      <div className="button-container">
+        <button onClick={handleCalculateClick}>Calculate</button>
+        <button onClick={handleClearClick}>Clear</button>
+      </div>
     </div>
   );
 }
